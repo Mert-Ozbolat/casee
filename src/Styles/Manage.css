@@ -1,0 +1,541 @@
+@import "../Styles/Root.css";
+
+* {
+  font-family: var(--font-family-heading);
+}
+
+section {
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+
+.titles {
+  position: relative;
+}
+
+.dots {
+  position: absolute;
+  top: 2%;
+  left: -8%;
+  width: 5rem;
+}
+
+.circle {
+  width: 255px;
+  position: absolute;
+  top: 19%;
+  right: 12%;
+}
+
+h1 {
+  font-size: var(--heading-01-size);
+  font-weight: var(--heading-01-font-weight);
+  line-break: var(--heading-01-line-height);
+  letter-spacing: var(--heading-01-letter-spacing);
+  color: var(--Bright-Grey);
+  word-spacing: 10px;
+}
+
+h1 span {
+  z-index: 10;
+  color: var(--Light-Turquoise);
+}
+
+p {
+  margin-top: 20px;
+  color: var(--Mid-Grey);
+  font-size: var(--body-04-size);
+  line-height: var(--body-04-line-height);
+}
+
+.trialBtn {
+  margin-top: 20px;
+  background-color: var(--Light-Turquoise);
+  color: var(--White);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  border-radius: 40px;
+  margin-top: 64px;
+}
+
+.slideImages {
+  position: relative;
+}
+
+.phones {
+  z-index: -1;
+  width: 450px;
+}
+
+.total {
+  width: 230px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.graph {
+  width: 150px;
+  position: absolute;
+  top: 51%;
+  left: -30px;
+}
+
+/* Responsive */
+
+@media (max-width: 1210px) {
+  .dots {
+    display: none;
+  }
+
+  .circle {
+    width: 160px;
+    position: absolute;
+    top: -2%;
+    right: 1%;
+  }
+
+  h1 {
+    font-size: 31px;
+  }
+
+  .phones {
+    width: 370px;
+  }
+
+  .total {
+    width: 160px;
+  }
+
+  .graph {
+    width: 110px;
+    position: absolute;
+    top: 51%;
+    left: -10px;
+  }
+}
+@media (min-width: 1025px) {
+  .titles {
+    max-width: 400px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    text-align: center;
+    font-size: 3vw;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 20px; /* Optional padding to give more space inside the box */
+  }
+}
+
+@media (max-width: 1025px) {
+  section {
+    gap: 20px;
+  }
+
+  .circle {
+    width: 145px;
+    position: absolute;
+    top: 11%;
+    left: -1%;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .phones {
+    width: 350px;
+  }
+
+  .total {
+    width: 140px;
+  }
+
+  .graph {
+    width: 90px;
+    position: absolute;
+    top: 51%;
+    left: -10px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 20px; /* Optional padding to give more space inside the box */
+  }
+}
+
+@media (max-width: 760px) {
+  section {
+    gap: 20px;
+  }
+
+  .circle {
+    width: 150px;
+    position: absolute;
+    top: 14%;
+    left: -5%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .phones {
+    width: 450px;
+  }
+
+  .total {
+    width: 120px;
+  }
+
+  .graph {
+    width: 70px;
+    position: absolute;
+    top: 51%;
+    left: -10px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 20px; /* Optional padding to give more space inside the box */
+  }
+}
+
+@media (max-width: 610px) {
+  .circle {
+    width: 150px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+  }
+}
+
+@media (max-width: 580px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 170px;
+    position: absolute;
+    top: 11%;
+    left: -4%;
+  }
+
+  h1 span {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: var(--body-04-size);
+    font-family: var(---font-family-body-mobile);
+    line-height: var(--body-04-line-height);
+    letter-spacing: var(--body-04-letter-spacing);
+  }
+
+  .phones {
+    width: 450px;
+  }
+
+  .total {
+    width: 120px;
+  }
+
+  .graph {
+    width: 70px;
+    position: absolute;
+    top: 51%;
+    left: 0px;
+  }
+
+  .trialBtn {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 40px;
+    border-radius: 34px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    max-width: 400px; /* Sets the maximum width */
+    width: 100%; /* Allows the container to shrink based on content */
+    height: 170px; /* Make height equal to max-width to create a square container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-end; /* Centers vertically */
+  }
+
+  div#finance-text > span {
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 20px; /* Optional padding to give more space inside the box */
+  }
+}
+
+@media (max-width: 410px) {
+  .circle {
+    width: 170px;
+    top: 11%;
+    left: 38%;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    max-width: 400px; /* Sets the maximum width */
+    width: 100%; /* Allows the container to shrink based on content */
+    height: 170px; /* Make height equal to max-width to create a square container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-end; /* Centers vertically */
+  }
+
+  div#finance-text > span {
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    padding: 20px; /* Optional padding to give more space inside the box */
+  }
+}
+
+@media (max-width: 375px) {
+  /* section {
+      padding: 0 !important;
+      margin: 0 !important;
+  } */
+
+  .titles {
+    margin-top: 50px;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  .circle {
+    width: 130px;
+    height: 52px;
+    position: absolute;
+    top: 10%;
+    left: 42%;
+  }
+
+  section div h1 {
+    font-size: 28px !important;
+    font-weight: bold;
+    font-family: var(--font-family-heading);
+    line-height: 160% !important;
+    width: 260px;
+  }
+
+  h1 span {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--font-family-heading);
+    line-height: 160%;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    color: #1c0e0d;
+    font-weight: 300;
+  }
+
+  .phones {
+    width: 330px;
+  }
+
+  .total {
+    width: 120px;
+  }
+
+  .graph {
+    width: 70px;
+    position: absolute;
+    top: 51%;
+    left: -10px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    max-width: 180px; /* Sets the maximum width */
+    width: 100%; /* Allows the container to shrink based on content */
+    height: 100px; /* Make height equal to max-width to create a square container */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Centers vertically */
+  }
+
+  div#finance-text > span {
+    text-align: bottom;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    line-height: 1; /* Ensure line-height doesn't push the text */
+  }
+}
+
+@media (max-width: 330px) {
+  .circle {
+    width: 130px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+  }
+
+  .graph {
+    width: 70px;
+    position: absolute;
+    top: 51%;
+    left: 0px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    max-width: 300px; /* Sets the maximum width to 30px */
+    width: 100%; /* Allows the container to shrink based on content */
+    height: 100px; /* Set height to desired dimensions */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-end; /* Aligns text to the bottom of the container */
+  }
+
+  div#finance-text > span {
+    font-size: 8px; /* Adjusted font size to fit within 30px container */
+    text-transform: uppercase;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 2px; /* Optional margin to add space from the bottom */
+  }
+}
+
+@media (max-width: 330px) {
+  .circle {
+    width: 130px;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+  }
+
+  .graph {
+    width: 70px;
+    position: absolute;
+    top: 51%;
+    left: 0px;
+  }
+  div#finance-text {
+    background-image: url("../Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    max-width: 150px; /* Sets the maximum width to 30px */
+    width: 100%; /* Allows the container to shrink based on content */
+    height: 120px; /* Set height to desired dimensions */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-end; /* Aligns text to the bottom of the container */
+  }
+
+  div#finance-text > span {
+    font-size: 32px; /* Adjusted font size to fit within 30px container */
+    text-transform: uppercase;
+    color: #5bc17f;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 30px;
+    margin-bottom: 2px; /* Optional margin to add space from the bottom */
+  }
+}

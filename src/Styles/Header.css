@@ -1,0 +1,145 @@
+@import "../Styles/Root.css";
+
+.links a:hover {
+  color: var(--Light-Turquoise);
+  transition: all ease-in-out 0.2s;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBtn {
+  color: var(--Light-Turquoise);
+}
+
+.signupBtn {
+  background-color: var(--Light-Turquoise);
+  color: var(--White);
+  border-radius: 2rem;
+  padding: 15px 34px;
+}
+
+.menuIcon {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  color: var(--Light-Turquoise);
+}
+
+/* Toggle Menu */
+.toggleMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.toggleMenu.show {
+  transform: translateX(0);
+}
+
+.toggleMenu ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.toggleMenu li {
+  margin: 15px 0;
+}
+
+.toggleMenu a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.toggleMenu a:hover {
+  color: var(--Light-Turquoise);
+}
+
+.toggleClose {
+  color: var(--Light-Turquoise);
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .links {
+    display: none;
+  }
+
+  .menuContainer {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .toggleMenu {
+    width: 300px;
+  }
+}
+
+@media (max-width: 580px) {
+  .logo {
+    max-width: 120px;
+  }
+
+  .toggleMenu {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 100px;
+  }
+
+  .menuIcon {
+    max-width: 30px;
+  }
+
+  .toggleMenu {
+    width: 150px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo {
+    max-width: 90px;
+  }
+
+  .menuIcon {
+    max-width: 20px;
+  }
+
+  .toggleMenu {
+    width: 130px;
+  }
+}
+
+@media (max-width: 250px) {
+  .logo {
+    max-width: 80px;
+  }
+}

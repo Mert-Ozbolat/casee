@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 375px) {
+  body {
+    padding: 0px 20px;
+  }
+  div#finance-text {
+    background-image: url("./Assets/Images/circle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto; /* Width covers container, height auto-adjusts */
+    font-size: 64px;
+    text-transform: uppercase;
+    display: inline-flex; /* Allows dynamic resizing based on text content */
+    justify-content: center;
+    align-items: center;
+    color: #5bc17f;
+    font-family: Poppins;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0px 40px;
+  }
+}
+
+div#finance-text {
+  background-image: url("./Assets/Images/circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto; /* Width covers container, height auto-adjusts */
+  text-align: center;
+  font-size: 64px;
+  text-transform: uppercase;
+  display: inline-flex; /* Allows dynamic resizing based on text content */
+  justify-content: center;
+  align-items: center;
+  color: #5bc17f;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  padding: 20px; /* Optional padding to give more space inside the box */
+}

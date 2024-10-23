@@ -1,0 +1,91 @@
+:root {
+  /** Primary Colors **/
+  --Fuel-Yellow: #fca61f;
+  --crocus-purple: #8976fd;
+
+  /** Secondary Colors **/
+  --Day-Sky-Blue: #6dcbff;
+  --Easter-purple: #c06ef3;
+  --Light-Turquoise: #5bc17f;
+  --Selective-Yellow: #fdba09;
+  --Soft-Blue: #7188ff;
+
+  /** Text Colors **/
+  --Bright-Grey: #332c5c;
+  --Purple-Haze: #494369;
+  --Mid-Grey: #5e587a;
+  --White: #ffffff;
+
+  /** State Colors **/
+  --Info: #2f80ed;
+  --Success: #27ae60;
+  --Warning: #e2b93b;
+  --Error: #eb5757;
+
+  /** Background Colors **/
+  --Background-White: #ffffff;
+
+  /** Typography **/
+  /** Headings **/
+  --font-family-heading: "Poppins", sans-serif;
+  --font-weight-heading: 600;
+
+  /** Heading 01 **/
+  --heading-01-size: 52px;
+  --heading-01-line-height: 1.5;
+  --heading-01-letter-spacing: 0;
+  --heading-01-font-weight: 600;
+
+  /** Heading 02 **/
+  --heading-02-size: 48px;
+  --heading-02-line-height: 130%;
+  --heading-02-letter-spacing: 0;
+  --heading-02-font-weight: 600;
+
+  /** Heading 03 **/
+  --heading-03-size: 44px;
+  --heading-03-line-height: 140%;
+  --heading-03-letter-spacing: 0;
+  --heading-03-font-weight: 600;
+
+  /** Heading 04 **/
+  --heading-04-size: 36px;
+  --heading-04-line-height: 160%;
+  --heading-04-letter-spacing: 0;
+  --heading-04-font-weight: 600;
+
+  /** Heading 05 **/
+  --heading-05-size: 24px;
+  --heading-05-line-height: 160%;
+  --heading-05-letter-spacing: 0;
+  --heading-05-font-weight: 600;
+
+  /** Body **/
+  --font-family-body: "Nunito Sans", sans-serif;
+  --font-weight-body-regular: 400;
+  --font-weight-body-bold: 700;
+
+  /** Body 01 **/
+  --body-01-size: 20px;
+  --body-01-line-height: 180%;
+  --body-01-letter-spacing: 0;
+  --body-01-font-weight: 400;
+
+  /** Body 02 **/
+  --body-02-size: 20px;
+  --body-02-line-height: 180%;
+  --body-02-letter-spacing: 0;
+  --body-02-font-weignt: bold;
+
+  /** Body 03 **/
+  --body-03-size: 18px;
+  --body-03-line-height: 180%;
+  --body-03-letter-spacing: 0;
+  --body-03-font-weight: 400;
+
+  /** Body 04 **/
+  --body-04-size: 18px;
+  --body-04-line-height: 150%;
+  --body-04-letter-spacing: 0;
+  --body-04-font-weight: bold;
+}

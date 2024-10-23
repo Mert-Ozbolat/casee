@@ -1,0 +1,52 @@
+@import '../Styles/Root.css';
+
+.userContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+@media(max-width: 780px) {
+    .increaseUser {
+        border: none;
+    }
+}
+
+@media(max-width: 580px) {
+    .userContainer{
+        grid-template-columns: 1fr;
+    }
+    .seperator{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 180px;
+    }
+    .seperator-x{
+        border-bottom: 1px solid #E4E7EB !important;
+    }
+    h1{
+        font-size: 64px !important;
+        font-family: var(---font-family-heading);
+        line-height: 64px;
+        letter-spacing: 0;
+        color: #18063C;
+        margin-bottom: 30px;
+        font-weight: 600;
+    }
+    span{
+        font-size: 18px;
+        line-height: 18px;
+        font-family:var(---font-family-body);
+        letter-spacing: 0;
+        color:#7c7c7c;
+        font-weight: 300;
+        margin-bottom: 30px;
+    }
+
+}
